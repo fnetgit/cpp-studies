@@ -1,41 +1,29 @@
-# Prerequisites
-*.d
+# Executáveis compilados
+*.out
+*.exe
+*.bin
+a.out
 
-# Compiled Object files
-*.slo
-*.lo
+# Arquivos objeto
 *.o
 *.obj
 
-# Precompiled Headers
-*.gch
-*.pch
+# Arquivos de saída de testes
+output.txt
+*.ans
+*.res
 
-# Linker files
-*.ilk
+# Arquivos temporários de editores
+*.swp
+*.swo
+*~
+.vscode/
 
-# Debugger Files
+# Arquivos de debug
+*.su
+*.idb
 *.pdb
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+# Outros
+*.log
+core
