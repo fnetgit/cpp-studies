@@ -1,9 +1,32 @@
-# g++ -std=c++17 -O2 -Wall -Wextra file.cpp -o file.out
+# Guia de Compilação e Execução C++
 
-// g++ -std=c++17 -O2 -Wall -Wextra solution.cpp -o solution (flags que o judge provavelmente vai usar)
-// -std=c++17 define o padrão da linguagem
-// -O2 nível de otimização, é o padrão para a maioria dos judge
-// -Wall -Wextra ativa os warnings
-// -o define o nome do bin de saída
+## 1. Compilando um Arquivo C++ (`g++`)
 
-./file < input.txt
+```bash
+g++ -std=c++17 -O2 -Wall -Wextra arquivo.cpp -o executavel
+```
+
+### Significado das Flags:
+
+- `-std=c++17`: Define o padrão da linguagem C++17.
+- `-O2`: Nível de otimização de código (padrão em juízes online / programação competitiva).
+- `-Wall -Wextra`: Ativa avisos (*warnings*) do compilador para detectar potenciais erros.
+- `-o executavel`: Define o nome do arquivo binário/executável de saída.
+
+---
+
+## 2. Executando o Programa
+
+```bash
+./executavel
+```
+
+---
+
+## 3. Passando Entradas de Arquivo (`input.txt`)
+
+Para redirecionar a entrada padrão (`std::cin`) a partir de um arquivo de texto:
+
+```bash
+./executavel < input.txt
+```
