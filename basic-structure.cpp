@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
+using namespace std; // allows using standard library names without the 'std::' prefix
 
 int main()
 {

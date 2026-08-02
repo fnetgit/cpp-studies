@@ -56,3 +56,11 @@ Ou com entrada via arquivo:
 ```bash
 make basic-structure && ./basic-structure < input.txt
 ```
+
+---
+
+- **endl** = \n + flush
+Serve para imprimir uma nova linha e limpar o buffer de saída, garantindo que tudo seja exibido imediatamente.
+
+- **flush**
+Limpa o buffer de saída, útil para garantir que mensagens sejam exibidas antes de uma pausa ou espera por entrada do usuário.
