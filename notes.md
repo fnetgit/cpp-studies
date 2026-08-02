@@ -6,7 +6,7 @@
 g++ -std=c++17 -O2 -Wall -Wextra arquivo.cpp -o executavel
 ```
 
-### Significado das Flags:
+### Significado das Flags
 
 - `-std=c++17`: Define o padrão da linguagem C++17.
 - `-O2`: Nível de otimização de código (padrão em juízes online / programação competitiva).
@@ -29,4 +29,30 @@ Para redirecionar a entrada padrão (`std::cin`) a partir de um arquivo de texto
 
 ```bash
 ./executavel < input.txt
+```
+
+---
+
+## Compilando Usando `make`
+
+Com as flags pré-configuradas no arquivo `Makefile` (`CXXFLAGS = -std=c++17 -O2 -Wall -Wextra`), você pode usar a regra implícita do GNU Make para compilar qualquer arquivo sem digitar as flags manualmente.
+
+Basta passar o nome do programa **sem** a extensão `.cpp`:
+
+```bash
+make hello
+```
+
+Isso compilará automaticamente `hello.cpp` gerando o executável `hello`.
+
+### Compilar e Executar em um Único Comando
+
+```bash
+make hello && ./hello
+```
+
+Ou com entrada via arquivo:
+
+```bash
+make basic-structure && ./basic-structure < input.txt
 ```
