@@ -7,24 +7,24 @@ int main()
     ios_base::sync_with_stdio(0);
     cin.tie(0);
 
-    unordered_set<int> difs;
-    int d[] = {1, 2, 3, 4};
+    bool difs[5] = {false};
     int count = 0;
 
     for (int i = 0; i < 10; i++)
     {
         int x;
         cin >> x;
-        difs.insert(x);
+        difs[x] = true;
     }
 
-    for (int x : d)
+    for (int i = 1; i < 5; i++)
     {
-        if (!difs.count(x))
+        if (!difs[i])
         {
             count++;
         }
     }
-    cout << count << "\n";
+    cout << count;
+
     return 0;
 }
